@@ -1,0 +1,169 @@
+{
+  "group/right": {
+    "orientation": "horizontal",
+    "modules": [
+      "bluetooth",
+      "group/group-volume",
+      "group/group-backlight",
+      "network",
+      "tray",
+    ],
+  },
+
+  "group/right-hidden": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": true,
+      "click-to-reveal": true,
+    },
+    "modules": ["custom/arrow-left", "memory", "temperature"],
+  },
+
+  "group/right-hidden-top": {
+    "orientation": "horizontal",
+    "modules": ["group/right-hidden", "custom/ctlcenter"],
+  },
+
+  /*
+  "bluetooth": {
+      "format": "{}",
+      "format-on": "󰂰",
+      "format-off": "󰂲",
+      "format-disabled": "󰂲",
+      "format-connected": "{device_alias}",
+      "format-connected-battery": "{device_alias}",
+      "tooltip-format": "{device_enumerate}",
+      "tooltip-format-enumerate-connected": "{device_alias}",
+      "tooltip-format-enumerate-connected-battery": "{device_alias}   {device_battery_percentage}%",
+      "on-click": "~/.local/bin/toggle_bluetooth &",
+      "on-click-right": "hyprctl dispatch exec blueman-manager"
+  },
+*/
+
+  "bluetooth": {
+    "format": "{}",
+    "format-on": "󰂰",
+    "format-off": "󰂲",
+    "format-disabled": "󰂲",
+    "format-connected": "{device_alias}",
+    "format-connected-battery": "{device_alias}",
+    "tooltip-format": "{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}   {device_battery_percentage}%",
+    "on-click": "kitty /home/cicada/.config/waybar/scripts/bluetooth",
+    "on-click-right": "blueman-manager",
+  },
+
+  "group/group-volume": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 600,
+      "transition-left-to-right": true,
+    },
+    "modules": ["pulseaudio", "pulseaudio/slider"],
+  },
+
+  "group/group-backlight": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 600,
+      "transition-left-to-right": true,
+    },
+    "modules": ["backlight", "backlight/slider"],
+  },
+
+  "backlight": {
+    "scroll-step": 2,
+    "format": "{icon}",
+    "tooltip-format": "{percent}%",
+    "format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"],
+  },
+
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-bluetooth": "{icon}",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol -t 4",
+    "tooltip-format": "{volume}%",
+    "format-muted": "<span size='12pt'>󰝟</span>",
+    "scroll-step": 2,
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "<span size='12pt'>󰕿</span>",
+        "<span size='12pt'>󰖀</span>",
+        "<span size='12pt'>󰕾</span>",
+      ],
+    },
+  },
+
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "cursor": true,
+    "on-click-right": "pavucontrol -t 4",
+  },
+
+  "backlight/slider": {
+    "min": 5,
+    "max": 100,
+    "cursor": true,
+  },
+
+  "network": {
+    "interval": 10,
+    "format-disabled": "",
+    "format-disconnected": "",
+    "format-wifi": "",
+    "format-ethernet": "",
+    "tooltip-format": "{essid}\n\nFrequency: {frequency}GHz\nStrength: {signalStrength}%\n\n{bandwidthUpBytes}   {bandwidthDownBytes}",
+    "menu": "on-click-right",
+    "menu-file": "/home/cicada/.config/waybar/scripts/network &",
+    "menu-actions": {
+      "action-1": "nmcli radio wifi off",
+      "action-2": "nmcli radio wifi on",
+      "action-3": "kitty nmtui",
+      "action-4": "nm-connection-editor",
+    },
+  },
+
+  "tray": {
+    "icon-size": 13,
+    "spacing": 12,
+    "cursor": true,
+  },
+
+  "custom/arrow-left": {
+    "format": "",
+    "tooltip": false,
+    "cursor": true,
+  },
+
+  "memory": {
+    "interval": 10,
+    "format": "  {used:0.1f}G/{total:0.1f}G",
+    "states": {
+      "warning": 80,
+      "critical": 90,
+    },
+  },
+
+  "temperature": {
+    "interval": 10,
+    "format": "{icon} {temperatureC}°",
+    "critical-threshold": 90,
+    "format-icons": ["", "", "", "", ""],
+  },
+
+  "custom/ctlcenter": {
+    "tooltip": false,
+    "format": "",
+    "on-click": "swaync-client -t",
+  },
+}

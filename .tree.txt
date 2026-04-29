@@ -1,0 +1,195 @@
+.
+├── assets
+│   ├── icons
+│   │   ├── astolfo.png
+│   │   ├── NixOS.png
+│   │   ├── nix-snowflake-colours.svg
+│   │   ├── nix-snowflake-rainbow.svg
+│   │   └── robot.png
+│   └── wallpaper
+│       ├── 2.png
+│       ├── 8hLgnpcNkK.png
+│       ├── astolfo.png
+│       ├── C28lttsesS.png
+│       ├── MBdPfIn6z0.png
+│       ├── wallpaper.jpg
+│       ├── wwp-01.png
+│       ├── wwp-02.png
+│       └── xA89owJEcE.jpg
+├── flake.lock
+├── flake.nix
+├── hosts
+│   └── asus-fa507nvr
+│       ├── configuration.nix
+│       ├── hardware
+│       │   ├── asus-fa507nvr.nix
+│       │   ├── default.nix
+│       │   └── nvidia.nix
+│       └── hardware-configuration.nix
+├── secrets
+│   └── secrets.yaml
+├── _sources
+│   └── generated.nix
+├── system
+│   ├── core
+│   │   ├── boot.nix
+│   │   ├── default.nix
+│   │   ├── linux-kernel.nix
+│   │   ├── locale.nix
+│   │   ├── mime.nix
+│   │   ├── network.nix
+│   │   ├── nix.nix
+│   │   ├── nixpkgs.nix
+│   │   ├── sessionVariables.nix
+│   │   ├── users.nix
+│   │   ├── virtualisation.nix
+│   │   └── zram.nix
+│   ├── default.nix
+│   ├── home
+│   │   └── home-manager.nix
+│   ├── packages
+│   │   ├── audio.nix
+│   │   ├── bluetooth.nix
+│   │   ├── default.nix
+│   │   ├── desktop.nix
+│   │   ├── fonts.nix
+│   │   ├── portals.nix
+│   │   └── programs.nix
+│   ├── programs
+│   │   ├── appimage.nix
+│   │   └── default.nix
+│   ├── security
+│   │   ├── default.nix
+│   │   └── polkit.nix
+│   └── services
+│       ├── default.nix
+│       ├── openssh.nix
+│       ├── udisks2.nix
+│       └── xserver.nix
+└── users
+    ├── cicada
+    │   ├── default.nix
+    │   ├── packages
+    │   │   ├── default.nix
+    │   │   ├── mimeo
+    │   │   │   ├── associations.txt
+    │   │   │   └── default.nix
+    │   │   └── yazi
+    │   │       ├── default.nix
+    │   │       ├── initLua.nix
+    │   │       ├── keymap.nix
+    │   │       ├── plugins.nix
+    │   │       ├── settings.nix
+    │   │       └── theme.nix
+    │   ├── programs
+    │   │   ├── btop
+    │   │   │   ├── config
+    │   │   │   │   ├── btop.conf
+    │   │   │   │   └── themes
+    │   │   │   └── default.nix
+    │   │   ├── dconf.nix
+    │   │   ├── default.nix
+    │   │   ├── dolphin.nix
+    │   │   ├── git.nix
+    │   │   ├── gnupg.nix
+    │   │   ├── llama-cpp.nix
+    │   │   ├── mtr.nix
+    │   │   ├── nix-ld.nix
+    │   │   ├── obs-studio.nix
+    │   │   ├── steam
+    │   │   │   └── default.nix
+    │   │   └── throne.nix
+    │   └── symlinks
+    │       ├── default.nix
+    │       ├── desktop
+    │       │   ├── default.nix
+    │       │   ├── fastfetch
+    │       │   ├── fuzzel
+    │       │   │   └── default.nix
+    │       │   ├── hyprlock
+    │       │   │   ├── config
+    │       │   │   │   └── hyprlock.conf
+    │       │   │   └── default.nix
+    │       │   ├── kitty
+    │       │   │   ├── config
+    │       │   │   │   ├── colors-kitty.conf
+    │       │   │   │   ├── kitty.conf
+    │       │   │   │   ├── theme.conf
+    │       │   │   │   └── userprefs.conf
+    │       │   │   └── default.nix
+    │       │   ├── niri
+    │       │   │   ├── config
+    │       │   │   │   ├── animations.kdl
+    │       │   │   │   ├── binds.kdl
+    │       │   │   │   ├── config.kdl
+    │       │   │   │   ├── gestures.kdl
+    │       │   │   │   ├── input.kdl
+    │       │   │   │   ├── layer-rule.kdl
+    │       │   │   │   ├── layout.kdl
+    │       │   │   │   ├── miscellaneous.kdl
+    │       │   │   │   ├── output.kdl
+    │       │   │   │   ├── overview.kdl
+    │       │   │   │   ├── recent-windows.kdl
+    │       │   │   │   └── window-rule.kdl
+    │       │   │   ├── default.nix
+    │       │   │   └── wallpaper
+    │       │   │       ├── 2.png
+    │       │   │       ├── 4.jpg
+    │       │   │       ├── 8hLgnpcNkK.png
+    │       │   │       ├── astolfo.png
+    │       │   │       ├── C28lttsesS.png
+    │       │   │       ├── MBdPfIn6z0.png
+    │       │   │       ├── wwp-01.png
+    │       │   │       ├── wwp-02.png
+    │       │   │       └── xA89owJEcE.jpg
+    │       │   ├── swaync
+    │       │   │   ├── config
+    │       │   │   │   ├── config.jsonc
+    │       │   │   │   └── style.css
+    │       │   │   └── default.nix
+    │       │   ├── swayosd
+    │       │   │   ├── config
+    │       │   │   │   └── style.css
+    │       │   │   └── default.nix
+    │       │   ├── waybar
+    │       │   │   ├── config
+    │       │   │   │   ├── config.json
+    │       │   │   │   ├── modules
+    │       │   │   │   │   ├── center.json
+    │       │   │   │   │   ├── colors
+    │       │   │   │   │   │   └── colors.css
+    │       │   │   │   │   ├── left.json
+    │       │   │   │   │   └── right.json
+    │       │   │   │   └── style.css
+    │       │   │   └── default.nix
+    │       │   ├── wlogout
+    │       │   │   ├── config
+    │       │   │   │   ├── icons
+    │       │   │   │   │   ├── lock.png
+    │       │   │   │   │   ├── logout.png
+    │       │   │   │   │   ├── pause.png
+    │       │   │   │   │   ├── power.png
+    │       │   │   │   │   ├── restart.png
+    │       │   │   │   │   └── sleep.png
+    │       │   │   │   ├── layout
+    │       │   │   │   └── style.css
+    │       │   │   └── default.nix
+    │       │   └── wofi
+    │       │       ├── config
+    │       │       │   ├── config
+    │       │       │   ├── style.css
+    │       │       │   ├── style-wallpaper.css
+    │       │       │   ├── style-waybar.css
+    │       │       │   ├── wallpaper
+    │       │       │   └── waybar
+    │       │       └── default.nix
+    │       └── local
+    │           ├── bin
+    │           │   └── default.nix
+    │           ├── default.nix
+    │           ├── factorio.nix
+    │           └── share
+    │               └── default.nix
+    └── cicada.nix
+
+53 directories, 140 files

@@ -1,0 +1,10 @@
+{
+  "layer": "top",
+  "position": "top",
+  "width": 1910,
+  "height": 25,
+  "margin": " 0",
+  "spacing": 4, // Gaps between modules (4px)
+
+  "include": ["/home/cicada/.config/waybar/modules-position.jsonc"],
+}

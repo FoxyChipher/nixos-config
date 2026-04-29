@@ -1,0 +1,96 @@
+{
+  "custom/arrow-right": {
+    "format": "",
+    "tooltip": false,
+    "cursor": true,
+  },
+
+  "group/left-hidden": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false,
+      "click-to-reveal": true,
+    },
+
+    "modules": [
+      "custom/arrow-right",
+      "battery",
+      "cpu",
+      "load",
+      "power-profiles-daemon",
+    ],
+  },
+
+  "group/left-hidden-top": {
+    "orientation": "horizontal",
+    "modules": ["custom/start", "group/left-hidden"],
+  },
+
+  "group/left": {
+    "orientation": "horizontal",
+    "modules": ["niri/workspaces", "niri/window"],
+  },
+
+  "niri/workspaces": {
+    "format": "{icon}",
+    "cursor": true,
+    "on-scroll-up": "niri msg action focus-workspace-up",
+    "on-scroll-down": "niri msg action focus-workspace-down",
+    "format-icons": {
+      "active": "󰮯",
+      "default": "",
+      "empty": "",
+    },
+  },
+
+  "niri/window": {
+    "max-length": 45,
+  },
+
+  "custom/start": {
+    "format": "",
+    "on-click": "rofi -show drun",
+  },
+
+  "battery": {
+    "interval": 20,
+    "full-at": 100,
+    "tooltip": true,
+    "format-full": "",
+    "format": "{icon} {capacity}%",
+    "format-time": "{H}:{M:02}",
+    "format-charging": " {capacity}% ({time})",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂂", "󰁹"],
+    "states": {
+      "warning": 30,
+      "critical": 15,
+    },
+  },
+
+  "cpu": {
+    "interval": 30,
+    "format": " {usage}%",
+    "cursor": true,
+    "states": {
+      "warning": 80,
+      "critical": 90,
+    },
+  },
+
+  "load": {
+    "interval": 30,
+    "format": " {load1}%",
+    "cursor": true,
+  },
+
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}",
+    "format-icons": {
+      "performance": "",
+      "balanced": "",
+      "power-saver": "",
+    },
+  },
+}

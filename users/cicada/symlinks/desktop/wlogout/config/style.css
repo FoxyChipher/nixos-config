@@ -1,0 +1,111 @@
+@import url("/home/cicada/.cache/wal/colors-waybar.css");
+* {
+    all: unset;
+    background-image: none;
+    margin: unset;
+    padding: unset;
+    transition: 200ms cubic-bezier(0, 0, 1, 1);
+}
+
+window {
+    background-color: transparent; /* убери цвет полностью */
+}
+
+button {
+    font-family: "CodeNewRoman Nerd Font Mono";
+    background-color: alpha(@color9, 0.5);
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#lock {
+    background-image: image(url("./icons/lock.png"));
+    margin: 5px 5px 5px 300px;
+    padding: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+#shutdown {
+    background-image: image(url("./icons/power.png"));
+    margin: 5px 300px 5px 5px;
+    padding: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+#logout {
+    background-image: image(url("./icons/logout.png"));
+    margin: 5px 300px 5px 5px;
+    padding: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+#reboot {
+    background-image: image(url("./icons/restart.png"));
+    /*background-color: alpha(@background, 0.6);*/
+    margin: 5px 5px 5px 300px;
+    padding: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+#hibernate {
+    opacity: 0;
+    /*background-image: image(
+        url("/usr/share/wlogout/icons/hibernate.png"),
+        url("/usr/local/share/wlogout/icons/hibernate.png")
+    );*/
+}
+#suspend {
+    opacity: 0;
+    /*background-image: image(
+        url("/usr/share/wlogout/icons/suspend.png"),
+        url("/usr/local/share/wlogout/icons/suspend.png")
+    );*/
+}
+
+#lock:focus {
+    margin: 5px 5px 5px 200px;
+}
+#shutdown:focus {
+    margin: 5px 200px 5px 5px;
+}
+#logout:focus {
+    margin: 5px 200px 5px 5px;
+}
+#reboot:focus {
+    margin: 5px 5px 5px 200px;
+}
+button:focus {
+    background-color: alpha(@color5, 1);
+    color: #000000;
+    background-position: center;
+}
+
+/*
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot || loginctl reboot",
+    "keybind" : "r"
+}
+
+{
+    "label" : "logout",
+    "action" : "pkill Hyprland || pkill sway || pkill niri || loginctl terminate-user $USER",
+    "keybind" : "e"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff || loginctl poweroff",
+    "keybind" : "s"
+}
+{
+    "label" : "hibernate",
+    "action" : "echo hello",
+    "text" : "Hibernate",
+    "keybind" : "h",
+    "height" : 0,
+    "width" : 0
+}
+{
+    "label" : "suspend",
+    "action" : "echo hello",
+    "text" : "Suspend",
+    "keybind" : "u",
+    "height" : 0,
+    "width" : 0
+}*/

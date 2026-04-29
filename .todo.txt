@@ -1,0 +1,9 @@
+===> НАСТРОИТЬ <===
+OBS studio
+mime list
+yazi
+Steam
+    steam-run
+
+Factorio
+    грузит проц

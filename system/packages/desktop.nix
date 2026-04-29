@@ -1,0 +1,19 @@
+{ config, pkgs, ... }: {
+  services.greetd = {
+    enable = true;
+    useTextGreeter = true;
+    settings = {
+      default_session = {
+        command = "${pkgs.tuigreet}/bin/tuigreet --time --remember --remember-session --xsessions ${config.services.displayManager.sessionData.desktops}/share/xsessions --sessions ${config.services.displayManager.sessionData.desktops}/share/wayland-sessions";
+        user = "greeter";
+      };
+    };
+  };
+
+  programs.niri = {
+    enable = true;
+    package = pkgs.niri-unstable;
+  };
+
+  systemd.user.services.niri-flake-polkit.enable = false;
+}

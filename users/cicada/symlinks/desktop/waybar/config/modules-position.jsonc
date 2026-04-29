@@ -1,0 +1,17 @@
+{
+  "modules-left": ["group/left-hidden-top", "group/left"],
+  "modules-center": ["clock"],
+  "modules-right": ["group/right", "group/right-hidden-top"],
+
+  // "include": [
+  //   "/home/cicada/NixOS/modules/desktop/programs/waybar/config/modules/center.jsonc",
+  //   "/home/cicada/NixOS/modules/desktop/programs/waybar/config/modules/left.jsonc",
+  //   "/home/cicada/NixOS/modules/desktop/programs/waybar/config/modules/right.jsonc",
+  // ],
+
+  "include": [
+    "/home/cicada/.config/waybar/modules/center.jsonc",
+    "/home/cicada/.config/waybar/modules/left.jsonc",
+    "/home/cicada/.config/waybar/modules/right.jsonc",
+  ],
+}

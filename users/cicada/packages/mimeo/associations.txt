@@ -1,0 +1,20 @@
+# Видео
+video/* mpv
+
+# Изображения
+image/png imv "$@"
+image/jpeg imv "$@"
+image/apng imv "$@"
+
+# PDF
+application/pdf zathura
+
+# Текст
+text/* nvim
+
+# Архивы
+application/zip file-roller
+application/x-tar file-roller
+
+# fallback
+.* xdg-open
