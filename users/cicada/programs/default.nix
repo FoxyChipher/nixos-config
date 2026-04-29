@@ -1,6 +1,7 @@
 { ... }: {
   imports = [
     ./btop
+    ./python/python.nix
     ./steam/default.nix
     ./dconf.nix
     ./dolphin.nix

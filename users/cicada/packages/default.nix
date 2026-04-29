@@ -75,5 +75,8 @@
     mimeo
     mpv
     imv
+
+    ripgrep
+    fd
   ];
 }
