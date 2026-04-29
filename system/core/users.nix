@@ -5,7 +5,6 @@
     description = "cicada";
     home = "/home/cicada";
     shell = pkgs.bash;
-    hashedPasswordFile = config.sops.secrets."user-password".path;
     extraGroups = [
       "networkmanager"
       "wheel"

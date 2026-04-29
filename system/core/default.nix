@@ -9,7 +9,7 @@
     ./nixpkgs.nix
     ./sessionVariables.nix
     ./users.nix
-    ./sops.nix
+    # ./sops.nix
     # ./virtualisation.nix
     # ./zram.nix
   ];

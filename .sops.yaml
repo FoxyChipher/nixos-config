@@ -1,8 +1,0 @@
-keys:
-  - &cicada age1e4pp2u5y509hktc4cvc85stn7jgryv2nhmdmvpd6wru8h86xr4qqt7sma8
-
-creation_rules:
-  - path_regex: secrets/.*\.yaml$
-    key_groups:
-      - age:
-          - *cicada

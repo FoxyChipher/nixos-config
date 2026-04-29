@@ -25,7 +25,7 @@ layout {
         // off
         on
         width 0.5
-        active-color "#ffffff"
+        active-color "#000000"
         inactive-color "transparent"
         urgent-color "transparent"
         // active-gradient from="#80c8ff" to="#bbddff" angle=45
