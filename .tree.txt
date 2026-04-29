@@ -27,6 +27,7 @@
 │       │   └── nvidia.nix
 │       └── hardware-configuration.nix
 ├── secrets
+│   ├── secrets.nix
 │   └── secrets.yaml
 ├── _sources
 │   └── generated.nix
@@ -41,6 +42,7 @@
 │   │   ├── nix.nix
 │   │   ├── nixpkgs.nix
 │   │   ├── sessionVariables.nix
+│   │   ├── sops.nix
 │   │   ├── users.nix
 │   │   ├── virtualisation.nix
 │   │   └── zram.nix
@@ -94,6 +96,7 @@
     │   │   ├── gnupg.nix
     │   │   ├── llama-cpp.nix
     │   │   ├── mtr.nix
+    │   │   ├── neovim.nix
     │   │   ├── nix-ld.nix
     │   │   ├── obs-studio.nix
     │   │   ├── steam
@@ -142,10 +145,37 @@
     │       │   │       ├── wwp-01.png
     │       │   │       ├── wwp-02.png
     │       │   │       └── xA89owJEcE.jpg
+    │       │   ├── rofi
+    │       │   │   ├── config
+    │       │   │   └── default.nix
     │       │   ├── swaync
     │       │   │   ├── config
-    │       │   │   │   ├── config.jsonc
-    │       │   │   │   └── style.css
+    │       │   │   │   ├── config.json
+    │       │   │   │   ├── icons
+    │       │   │   │   │   ├── bolt.png
+    │       │   │   │   │   ├── brightness-100.png
+    │       │   │   │   │   ├── brightness-20.png
+    │       │   │   │   │   ├── brightness-40.png
+    │       │   │   │   │   ├── brightness-60.png
+    │       │   │   │   │   ├── brightness-80.png
+    │       │   │   │   │   ├── gamemode.png
+    │       │   │   │   │   ├── microphone-mute.png
+    │       │   │   │   │   ├── microphone.png
+    │       │   │   │   │   ├── music.png
+    │       │   │   │   │   ├── palette.png
+    │       │   │   │   │   ├── picture.png
+    │       │   │   │   │   ├── play.png
+    │       │   │   │   │   ├── timer.png
+    │       │   │   │   │   ├── volume-high.png
+    │       │   │   │   │   ├── volume-low.png
+    │       │   │   │   │   ├── volume-mid.png
+    │       │   │   │   │   ├── volume-mute.png
+    │       │   │   │   │   └── wand.png
+    │       │   │   │   ├── style.css
+    │       │   │   │   └── themes
+    │       │   │   │       └── nova-dark
+    │       │   │   │           ├── central_control.css
+    │       │   │   │           └── notifications.css
     │       │   │   └── default.nix
     │       │   ├── swayosd
     │       │   │   ├── config
@@ -153,13 +183,22 @@
     │       │   │   └── default.nix
     │       │   ├── waybar
     │       │   │   ├── config
-    │       │   │   │   ├── config.json
+    │       │   │   │   ├── colors
+    │       │   │   │   │   ├── colors.css
+    │       │   │   │   │   └── colors.dark.css
+    │       │   │   │   ├── config.jsonc
     │       │   │   │   ├── modules
-    │       │   │   │   │   ├── center.json
-    │       │   │   │   │   ├── colors
-    │       │   │   │   │   │   └── colors.css
-    │       │   │   │   │   ├── left.json
-    │       │   │   │   │   └── right.json
+    │       │   │   │   │   ├── center.jsonc
+    │       │   │   │   │   ├── left.jsonc
+    │       │   │   │   │   └── right.jsonc
+    │       │   │   │   ├── modules-position.jsonc
+    │       │   │   │   ├── scripts
+    │       │   │   │   │   ├── backlight
+    │       │   │   │   │   ├── bluetooth
+    │       │   │   │   │   ├── network
+    │       │   │   │   │   ├── power
+    │       │   │   │   │   ├── update
+    │       │   │   │   │   └── volume
     │       │   │   │   └── style.css
     │       │   │   └── default.nix
     │       │   ├── wlogout
@@ -192,4 +231,4 @@
     │               └── default.nix
     └── cicada.nix
 
-53 directories, 140 files
+59 directories, 173 files
