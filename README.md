@@ -1,8 +1,8 @@
-.
-├── assets
-│   ├── icons
-│   │   ├── astolfo.png
-│   │   ├── NixOS.png
+.    
+├── assets    
+│   ├── icons    
+│   │   ├── astolfo.png    
+│   │   ├── NixOS.png    
 │   │   ├── nix-snowflake-colours.svg
 │   │   ├── nix-snowflake-rainbow.svg
 │   │   └── robot.png
