@@ -1,0 +1,3 @@
+{ ... }: {
+  import ./noctalia.nix
+}

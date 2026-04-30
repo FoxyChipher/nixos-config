@@ -58,6 +58,7 @@
         spicetify-nix.nixosModules.default
           ./users/cicada/programs/spicetify.nix
         sops-nix.nixosModules.sops
+        noctalia.nixosModules.default
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;

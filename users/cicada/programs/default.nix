@@ -12,7 +12,7 @@
     ./nix-ld.nix
     ./obs-studio.nix
     ./throne.nix
-    ./noctalia.nix
+    ./noctalia/default.nix
     # ./spicetify.nix
   ];
 }
