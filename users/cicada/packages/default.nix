@@ -29,6 +29,7 @@
     jetbrains-toolbox
     kdePackages.okular
     microsoft-edge
+    tor-browser
 
     playerctl
 

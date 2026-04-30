@@ -19,6 +19,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    noctalia.url = "github:noctalia-dev/noctalia-shell";
+
     # stylix = {
     #   url = "github:danth/stylix";
     #   inputs.nixpkgs.follows = "nixpkgs";
@@ -36,7 +38,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = { nixos-hardware, nixpkgs, home-manager, zen-browser, niri, agenix, spicetify-nix, sops-nix,
+  outputs = { nixos-hardware, nixpkgs, home-manager, zen-browser, niri, agenix, spicetify-nix, sops-nix, noctalia,
     # stylix,
     ... }@inputs:
   let
@@ -54,7 +56,7 @@
         # inputs.stylix.nixosModules.stylix
         home-manager.nixosModules.home-manager
         spicetify-nix.nixosModules.default
-          ~/NixOS/users/cicada/programs/spicetify.nix
+          ./users/cicada/programs/spicetify.nix
         sops-nix.nixosModules.sops
         {
           home-manager.useGlobalPkgs = true;
