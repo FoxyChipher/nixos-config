@@ -19,7 +19,4 @@
   #   enable = true;
   #   enableNvidia = true;
   # };
-
-  virtualisation.incus.enable = true;
-  networking.nftables.enable = true;
 }
