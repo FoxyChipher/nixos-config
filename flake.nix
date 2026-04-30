@@ -54,7 +54,7 @@
         # inputs.stylix.nixosModules.stylix
         home-manager.nixosModules.home-manager
         spicetify-nix.nixosModules.default
-          # ./modules/programs/spicetify.nix
+          ~/NixOS/users/cicada/programs/spicetify.nix
         sops-nix.nixosModules.sops
         {
           home-manager.useGlobalPkgs = true;

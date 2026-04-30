@@ -12,5 +12,6 @@
     ./nix-ld.nix
     ./obs-studio.nix
     ./throne.nix
+    # ./spicetify.nix
   ];
 }
