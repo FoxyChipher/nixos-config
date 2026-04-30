@@ -23,6 +23,7 @@
       "disk"
       "floppy"
       "kmem"
+      "incus-admin"
     ];
     packages = with pkgs; [];
   };

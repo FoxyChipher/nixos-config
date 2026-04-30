@@ -10,7 +10,6 @@
     ./sessionVariables.nix
     ./users.nix
     # ./sops.nix
-    # ./virtualisation.nix
     # ./zram.nix
   ];
 
