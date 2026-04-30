@@ -32,8 +32,8 @@
 
     playerctl
 
-    claude-code
-    claude-monitor
+    # claude-code
+    # claude-monitor
 
     python3
     micro-full
@@ -74,7 +74,7 @@
     inxi              # если хочешь норм вывод
 
     mimeo
-    mpv
+    (mpv.override { yt-dlp = null; })
     imv
 
     ripgrep

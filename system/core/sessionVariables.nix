@@ -8,6 +8,7 @@
     SDL_VIDEODRIVER = "wayland";
 
     PATH = "$HOME/.local/bin:$PATH";
+    LD_LIBRARY_PATH = "/run/current-system/sw/share/nix-ld/lib";
 
     # === Toolkit ===
     # QT_QPA_PLATFORM = "wayland;xcb";
