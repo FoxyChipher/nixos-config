@@ -3,7 +3,7 @@
     ./boot.nix
     ./linux-kernel.nix
     ./locale.nix
-    ./mime.nix
+    # ./mime.nix
     ./network.nix
     ./nix.nix
     ./nixpkgs.nix
