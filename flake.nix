@@ -37,8 +37,14 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    noctalia.url = "github:noctalia-dev/noctalia-shell";
   };
+<<<<<<< HEAD
   outputs = { nixos-hardware, nixpkgs, home-manager, zen-browser, niri, agenix, spicetify-nix, sops-nix, noctalia,
+=======
+  outputs = { nixos-hardware, nixpkgs, home-manager, zen-browser, niri, agenix, spicetify-nix, sops-nix, noctalia, 
+>>>>>>> c76a04e (Add noctalia configuration and restructure imports in flake.nix and default.nix)
     # stylix,
     ... }@inputs:
   let
