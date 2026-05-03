@@ -10,6 +10,6 @@
     ./swayosd/default.nix
     ./waybar/default.nix
     ./wlogout/default.nix
-    ./wofi/default.nix
+    # ./wofi/default.nix
   ];
 }

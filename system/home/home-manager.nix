@@ -1,6 +1,7 @@
 { config, pkgs, lib, inputs, ... }: {
   imports = [
     # ../../modules/services/swaync.nix  # ← добавь это
+    # ../../users/cicada/default.nix
   ];
   home.username = "cicada";
   home.homeDirectory = lib.mkForce "/home/cicada";
