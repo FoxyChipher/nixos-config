@@ -4,12 +4,12 @@ spawn-at-startup "alacritty"
 
 spawn-at-startup "awww-daemon"
 
-spawn-sh-at-startup "awww img ~/NixOS/assets/wallpaper/xA89owJEcE.jpg"
+// spawn-sh-at-startup "awww img ~/NixOS/assets/wallpaper/xA89owJEcE.jpg"
 // spawn-sh-at-startup "awww img -o eDP-1 /home/cicada/NixOS/assets/wallpaper/xA89owJEcE.jpg"
 // spawn-sh-at-startup "awww img -o HDMI-A-1 /home/cicada/NixOS/assets/wallpaper/xA89owJEcE.jpg"
-spawn-sh-at-startup "wal -i ~/NixOS/assets/wallpaper/xA89owJEcE.jpg -n -q"
+// spawn-sh-at-startup "wal -i ~/NixOS/assets/wallpaper/xA89owJEcE.jpg -n -q"
 
-spawn-at-startup "noctalia"
+spawn-at-startup "noctalia-shell"
 
 spawn-at-startup "swayosd-server"
 

@@ -51,7 +51,7 @@
     agenix-cli
     llama-cpp-vulkan
 
-    swaynotificationcenter
+    # swaynotificationcenter
     hyprlock
     wlogout
 
